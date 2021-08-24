@@ -1,8 +1,8 @@
 {
 	"NAME": "Kronometer",
-	"URL": "https://raw.githubusercontent.com/Kopernicus/Kronometer/master/Distribution/Release/GameData/Kronometer/Plugins/Kronometer.version",
-	"DOWNLOAD": "https://github.com/Kopernicus/Kronometer/releases/latest",
-	"CHANGE_LOG_URL": "https://raw.githubusercontent.com/Kopernicus/Kronometer/master/Distribution/Release/Changelog.txt",
+	"URL": "http://ksp.spacetux.net/avc/Kronometer",
+	"DOWNLOAD": "https://github.com/linuxgurugamer/Kronometer/releases/latest",
+	"CHANGE_LOG_URL": "https://raw.githubusercontent.com/linuxgurugamer/Kronometer/master/Changelog.txt",
 	"GITHUB":
 	{
 		"USERNAME": "Kopernicus",
@@ -12,9 +12,21 @@
 	"VERSION":
 	{
 		"MAJOR": 1,
-		"MINOR": 11,
+		"MINOR": 12,
 		"PATCH": 0,
-		"BUILD": 2
+		"BUILD": 0
+	},
+	"KSP_MIN_VERSION":
+	{
+		"MAJOR": 1,
+		"MINOR": 12,
+		"PATCH": 0
+	},
+	"KSP_MAX_VERSION":
+	{
+		"MAJOR": 1,
+		"MINOR": 12,
+		"PATCH": 99
 	},
 	"KSP_VERSION":
 	{

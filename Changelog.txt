@@ -1,6 +1,6 @@
 Changelog
 
-1.11.0.2
+1.12.0
 	Adoption by Linuxgurugamer at @Sigma-88's request
 	Added AssemblyVersion.tt
 		Note:  Did NOT add the installchecker, since this is included in JNSQ (and maybe others)
