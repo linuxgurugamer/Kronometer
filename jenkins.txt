@@ -35,8 +35,8 @@
 
 # 3:SOURCEFILE, DESTDIR
 3:Kronometer.version,GameData/Kronometer
-3:LICENSE,GameData/KerbalHotSeat
-3:README.md,GameData/KerbalHotSeat
+3:LICENSE,GameData/Kronometer
+3:README.md,GameData/Kronometer
 
 # 4:SOURCDIR, DESTDIR
 #4:Textures,GameData/ManeuverQueue/Textures
