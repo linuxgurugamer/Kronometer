@@ -1,9 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kronometer", "src\Kronometer.csproj", "{39BDAFFA-A6EF-4FDE-A152-C915BBD7D4E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4CDDA07C-EA75-4390-9705-2934E6A80C6F}"
+	ProjectSection(SolutionItems) = preProject
+		buildRelease.bat = buildRelease.bat
+		Changelog.txt = Changelog.txt
+		deploy.bat = deploy.bat
+		jenkins.txt = jenkins.txt
+		Kronometer.version = Kronometer.version
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

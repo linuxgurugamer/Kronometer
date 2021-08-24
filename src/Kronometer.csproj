@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -48,9 +48,53 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AssemblyVersion.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssemblyVersion.tt</DependentUpon>
+    </Compile>
     <Compile Include="KronometerLoader.cs" />
     <Compile Include="Kronometer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="AssemblyVersion.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AssemblyVersion.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>"$(DevEnvDir)\texttransform.exe" "$(ProjectDir)AssemblyVersion.tt"
+    
+</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+set KSPDIR=$(KSPDIR)
+
+IF "%25KSPDIR%25"=="" (
+
+	ECHO Configuration error - KSPDIR not specified in project.
+
+	ECHO Either set KSPDIR environment variable or edit BetterLoadSaveGame.Common.props
+
+	PAUSE
+
+	GOTO DONE
+
+)
+
+start /D $(SolutionDir) /WAIT deploy.bat  $(TargetDir) $(TargetFileName) $(TargetName)
+
+if $(ConfigurationName) == Release (	
+
+	start /D $(SolutionDir) /WAIT buildRelease.bat $(TargetDir) $(TargetFileName) $(TargetName)
+
+)
+</PostBuildEvent>
+  </PropertyGroup>
 </Project>
