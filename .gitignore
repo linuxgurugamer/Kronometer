@@ -21,8 +21,7 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
-.gitignore
-#*.dll
+*.dll
 *.swp
 !Distribution/Release/GameData/Kronometer/Plugins/Kronometer.dll
 

@@ -1,5 +1,8 @@
 Changelog
 
+1.12.0.1
+	Removed Kopernicus.Parser.dll
+
 1.12.0
 	Adoption by Linuxgurugamer at @Sigma-88's request
 	Added AssemblyVersion.tt

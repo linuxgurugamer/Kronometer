@@ -39,8 +39,7 @@
 3:README.md,GameData/Kronometer
 
 # 4:SOURCDIR, DESTDIR
-#4:Textures,GameData/ManeuverQueue/Textures
-4:Kopernicus,GameData/Kronometer/Plugins
+#4:Kopernicus,GameData/Kronometer/Plugins
 
 # 5:ModuleManager
 # 5:ModuleManager
