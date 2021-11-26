@@ -53,6 +53,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AssemblyVersion.tt</DependentUpon>
     </Compile>
+    <Compile Include="ClockFormatter.cs" />
+    <Compile Include="Date.cs" />
     <Compile Include="KronometerLoader.cs" />
     <Compile Include="Kronometer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
